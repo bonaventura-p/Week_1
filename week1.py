@@ -57,4 +57,40 @@ x+y # add y to the right of x in a new list
 
 len(x) # gives the length
 
+#### tuple quiz
 
+#1
+tuple1=(1,2,3)
+tuple1[0] #it gives 1
+
+#2
+tl=list(tuple1)
+
+#3
+tuple1.sort() #immutable elements
+
+#4
+(1,3)+(4,5,6)
+
+
+# factorial
+def factorial(n):
+	if n==0:
+		return 1
+	return n*factorial(n-1)
+
+# exceptions
+def divide(x,y):
+	try:
+		return x/y
+	except ZeroDivisionError:
+		print "'y' can't be zero, choose a correct value for 'y'"
+
+# quiz input
+def input_quiz():
+	age= raw_input("What is your age?\n")
+	name= raw_input("What is your name?\n")
+	age10=int(age)+10
+	age1=str(age10)
+	print "Hi {}, you are {} years old. In the years you will be {}".format(name,age,age1)
+	
